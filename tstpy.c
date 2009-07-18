@@ -1,3 +1,10 @@
+// TODO:
+// first match from left
+// first match from right
+// longest match
+// split on longest match ?
+// deallocations on clear
+
 #include "tst.h"
 
 #include <Python.h>
@@ -57,18 +64,17 @@ int TernaryStateTree_SetItem(PyObject *self, PyObject *key, PyObject *v)
 	}
 	else if (PyUnicode_Check(key))
 	{
-		attr_name = (const unsigned char*)PyUnicode_AS_DATA(key);
+		keyStr = PyUnicode_AsUTF8String(key);
+		if (keyStr == NULL) return -1;
 	}
 	else
 	{
 		keyStr = PyObject_Str(key);
+		if (keyStr == NULL) return -1;
+	}
 
-		if (keyStr == NULL)
-		{
-			PyErr_SetObject(PyExc_KeyError, key);
-			return -1;
-		}
-
+	if (keyStr != NULL)
+	{
 		attr_name = (const unsigned char*)PyString_AsString(keyStr);
 	}
 
@@ -134,14 +140,17 @@ PyObject* TernaryStateTree_doSearch(TernaryStateTree *self, PyObject *key, int m
 	}
 	else if (PyUnicode_Check(key))
 	{
-		attr_name = (const unsigned char*)PyUnicode_AS_DATA(key);
+		keyStr = PyUnicode_AsUTF8String(key);
+		if (keyStr == NULL) return NULL;
 	}
 	else
 	{
 		keyStr    = PyObject_Str(key);
-
 		if (keyStr == NULL) return NULL;
+	}
 
+	if (keyStr != NULL)
+	{
 		attr_name = (const unsigned char*)PyString_AsString(keyStr);
 	}
 
