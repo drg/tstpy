@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 1CBAED7A1013AFE40041AFAC /* Python */;
+		activeTarget = D28A88AD04BDD90700651E21 /* tstpy */;
+		addToTargets = (
+			D28A88AD04BDD90700651E21 /* tstpy */,
+		);
+		breakpoints = (
+			1CBAEDA11013B1990041AFAC /* tstpy.c:47 */,
+		);
+		codeSenseManager = 1C6AAEA71013AEEC0028F59E /* Code sense */;
+		executables = (
+			1CBAED7A1013AFE40041AFAC /* Python */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					300,
+					231,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					229,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 269725580;
+			PBXWorkspaceStateSaveDate = 269725580;
+		};
+		perUserProjectItems = {
+			1CBAED7C1013AFF60041AFAC /* PBXBookmark */ = 1CBAED7C1013AFF60041AFAC /* PBXBookmark */;
+			1CBAED7D1013AFF60041AFAC /* PBXTextBookmark */ = 1CBAED7D1013AFF60041AFAC /* PBXTextBookmark */;
+			1CBAED7F1013AFFC0041AFAC /* PBXTextBookmark */ = 1CBAED7F1013AFFC0041AFAC /* PBXTextBookmark */;
+			1CBAED801013B00C0041AFAC /* PBXTextBookmark */ = 1CBAED801013B00C0041AFAC /* PBXTextBookmark */;
+			1CBAED931013B08E0041AFAC /* PBXTextBookmark */ = 1CBAED931013B08E0041AFAC /* PBXTextBookmark */;
+			1CBAED961013B0A70041AFAC /* PBXTextBookmark */ = 1CBAED961013B0A70041AFAC /* PBXTextBookmark */;
+			1CBAED971013B0A70041AFAC /* PBXTextBookmark */ = 1CBAED971013B0A70041AFAC /* PBXTextBookmark */;
+			1CBAED9D1013B16A0041AFAC /* PBXTextBookmark */ = 1CBAED9D1013B16A0041AFAC /* PBXTextBookmark */;
+		};
+		sourceControlManager = 1C6AAEA61013AEEC0028F59E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	1C6AAEA61013AEEC0028F59E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	1C6AAEA71013AEEC0028F59E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	1CBAED781013AFBF0041AFAC /* tstpy.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 4494}}";
+			sepNavSelRange = "{834, 9}";
+			sepNavVisRange = "{799, 343}";
+		};
+	};
+	1CBAED7A1013AFE40041AFAC /* Python */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+			"PBXLSLaunchAction-0" = {
+				PBXLSLaunchAction = 0;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = PBXLSRunLaunchConfig;
+				commandLineArgs = (
+				);
+				displayName = "Executable Runner";
+				environment = {
+				};
+				identifier = com.apple.Xcode.launch.runConfig;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		launchableReference = 1CBAED7B1013AFE40041AFAC /* python */;
+		libgmallocEnabled = 0;
+		name = Python;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		startupPath = "<<ProjectDirectory>>";
+		variableFormatDictionary = {
+		};
+	};
+	1CBAED7B1013AFE40041AFAC /* python */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = "compiled.mach-o.executable";
+		name = python;
+		path = /opt/local/bin/python;
+		sourceTree = "<absolute>";
+	};
+	1CBAED7C1013AFF60041AFAC /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+	};
+	1CBAED7D1013AFF60041AFAC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+		name = "tstpy.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 325;
+		vrLoc = 0;
+	};
+	1CBAED7F1013AFFC0041AFAC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+		name = "tstpy.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 325;
+		vrLoc = 0;
+	};
+	1CBAED801013B00C0041AFAC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+		name = "tstpy.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 325;
+		vrLoc = 0;
+	};
+	1CBAED931013B08E0041AFAC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+		name = "tstpy.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 264;
+		vrLoc = 0;
+	};
+	1CBAED961013B0A70041AFAC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+		name = "tstpy.c: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 264;
+		vrLoc = 0;
+	};
+	1CBAED971013B0A70041AFAC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+		name = "tstpy.c: 47";
+		rLen = 9;
+		rLoc = 834;
+		rType = 0;
+		vrLen = 343;
+		vrLoc = 799;
+	};
+	1CBAED9D1013B16A0041AFAC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+		name = "tstpy.c: 47";
+		rLen = 9;
+		rLoc = 834;
+		rType = 0;
+		vrLen = 343;
+		vrLoc = 799;
+	};
+	1CBAEDA11013B1990041AFAC /* tstpy.c:47 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1CBAED781013AFBF0041AFAC /* tstpy.c */;
+		functionName = "_tst_cleanupPyObjects()";
+		hitCount = 2;
+		ignoreCount = 0;
+		lineNumber = 47;
+		location = tst.so;
+		modificationTime = 269726217.76755;
+		state = 1;
+	};
+	D28A88AD04BDD90700651E21 /* tstpy */ = {
+		activeExec = 0;
+	};
+}

@@ -7,7 +7,7 @@ LIBTST_LIB_PATH = $(LIBTST_PATH)/.libs
 PYTHON_PATH = /opt/local/Library/Frameworks/Python.framework/Versions/$(PYTHON_VERSION)/include/python$(PYTHON_VERSION)
 PYTHON_LIB_PATH = /opt/local/lib
 
-CFLAGS += -g
+CFLAGS += -O3
 
 OBJECTS = tstpy.o
 
@@ -19,7 +19,7 @@ tst.so: $(OBJECTS)
 	$(LD) -dynamiclib $(OBJECTS) $(LDFLAGS) -o $@
 
 %.o : %.c
-	$(CXX) $(INCLUDES) -c $^ -o $@
+	$(CXX) $(CFLAGS) $(INCLUDES) -c $^ -o $@
 
 clean:
 	-rm $(OBJECTS)

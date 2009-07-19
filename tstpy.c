@@ -15,10 +15,48 @@ typedef struct {
 	unsigned int length;
 } TernaryStateTree;
 
+/**
+ * Recursively decref any PyObjects found under node n and set node
+ * data to NULL.
+ */
+void _tst_cleanupPyObjects(node* n)
+{
+	if (n->middle != NULL)
+	{
+		if (n->value == 0)
+		{
+			Py_DECREF((PyObject*)n->middle);
+			n->middle = NULL;
+		}
+		else
+		{
+			_tst_cleanupPyObjects(n->middle);
+		}
+	}
+
+	if (n->left != NULL)   _tst_cleanupPyObjects(n->left);
+	if (n->right != NULL)  _tst_cleanupPyObjects(n->right);
+}
+
+/**
+ * Recursively decref any PyObjects found in the TST.
+ */
+void TernaryStateTree_cleanup(TernaryStateTree* self)
+{
+	for (int i = 0; i < 256; ++i)
+	{
+		if (self->theTree->head[i] != NULL)
+		{
+			_tst_cleanupPyObjects(self->theTree->head[i]);
+		}
+	}
+	tst_cleanup(self->theTree);
+}
+
 static void
 TernaryStateTree_dealloc(TernaryStateTree* self)
 {
-	tst_cleanup(self->theTree);
+	TernaryStateTree_cleanup(self);
     self->ob_type->tp_free((PyObject*)self);
 }
 
@@ -38,7 +76,7 @@ TernaryStateTree_new(PyTypeObject *type, PyObject *args, PyObject *kwds)
 static PyObject*
 TernaryStateTree_clear(TernaryStateTree *self, PyObject *args, PyObject *kwds)
 {
-	tst_cleanup(self->theTree);
+	TernaryStateTree_cleanup(self);
 	self->theTree = tst_init(100);
 	self->length = 0;
 	
